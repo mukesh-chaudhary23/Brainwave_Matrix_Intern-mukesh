@@ -1,61 +1,74 @@
 # Brainwave_Matrix_Intern
-# 🛡️Phishing Link Scanner 🔍
+# 💪 **Password Strength Checker** 💪
 
-A lightweight Python-based tool to detect potentially malicious or phishing URLs using heuristic checks and optional integration with [VirusTotal](https://www.virustotal.com/).
 
-## 🚀 About the Project
+This is a  password strength checker application developed as part of my internship at **Brainwave Matrix Solutions**. It provides users with real-time feedback on the strength of their passwords, helping them choose more secure options.
 
-This project was developed by **Mukesh Chaudhary**, Intern at **Brainwave Matrix Solutions**, to explore cybersecurity techniques in detecting phishing attacks. The tool helps users evaluate suspicious URLs based on various criteria including domain patterns, suspicious keywords, HTTPS usage, and URL length.
+## ✨ **Features** ✨
 
-## 🧠 Features
+* **⚡ Real-time Feedback:** As the user types their password, the application instantly assesses its strength.
+* **📊 Visual Indicator:** A color-coded progress bar visually represents the password strength:
+    * **🟢 Strong password** (as seen in the output below)
+    * ![Screenshot 2025-05-10 214923](https://github.com/user-attachments/assets/b4eabbd9-a985-41c3-9b6c-12687daac712)
 
-- ✅ Checks for suspicious keywords in URLs  
-- 🔐 Verifies whether the URL uses HTTPS  
-- 📏 Detects unusually long URLs  
-- 🚫 Flags known malicious domains  
-- 🧪 Integrates with VirusTotal API for in-depth scanning (optional)
+        ![Strong Password Output]
+        ```text
+        Password Strength: Strong
+        Password looks great!
+        ```
+    * **🟡 Moderate password** (as seen in the output below)
+       ![Screenshot 2025-05-10 215116](https://github.com/user-attachments/assets/f0173c9f-4222-4331-9101-ca7e0eca05e5)
 
-## 🧑‍💻 Usage
+        ```text
+        Password Strength: Moderate
+        Suggestions:
+        Add numbers.
+        Add special characters (!@#$% etc).
+        ```
+    * **🔴 Weak password** (as seen in the output below)
+        ![Weak Password Output]
+      ![Screenshot 2025-05-10 215044](https://github.com/user-attachments/assets/2227da65-4f14-414c-9241-522c7c606f7b)
 
-Run the script with Python 3:
+        ```text
+        Password Strength: Weak
+        Suggestions:
+        Avoid common passwords like 'password'.
+        ```
+* **🔒 Common Password Check:** The application includes a check against a list of common passwords,** including those found in lists from previous data breaches**. This significantly enhances security assessment by identifying passwords that are highly vulnerable to hacking.
+* **💡 Suggestions:** When a weak or moderate password is detected, the application provides helpful suggestions to improve its strength.
 
-```bash
-python phisher.py
-```
+## ⚙️ **Installation** ⚙️
 
-You'll be prompted to enter a URL to scan. Optionally, you can provide a VirusTotal API key in the script to enable external scanning.
+1.  Make sure you have Python installed on your system.
+2.  Clone this repository.
+3.  Ensure the `common_passwords.txt` file is in the same directory as the script.
+4.  Navigate to the project directory in your terminal.
+5.  Run the script using: `python pswd.py` *(assuming your script is named `pswd.py`)*
 
-## 🔑 VirusTotal Integration
+## 🚀 **Usage** 🚀
 
-To use the VirusTotal API:
+1.  Run the application.
+2.  Enter your password in the provided text field.
+3.  The application will automatically assess the strength and display the result along with any suggestions.
 
-1. Sign up at [virustotal.com](https://www.virustotal.com) to get a free API key.
-2. Replace the placeholder in the code:
-   ```python
-   vt_api_key = "your_api_key_here"
-   ```
+## 🤝 **Contributing** 🤝
 
-## 📝 Example Output
+Contributions are welcome! Please feel free to submit pull requests with improvements or bug fixes.
 
-```
-Enter the URL to scan: https://www.niti.gov.in/internship
-Scan Results:
-long_url: True
-suspicious_keywords: True
-https: False
-malicious_domain: True
-is_phishing: True
-Thank you so much for trying out our service!
-Created by @Mukesh Chaudhary
-```
+## 👨‍💻 **Developed By** 👨‍💻
 
-## 📁 File Structure
+**Mukesh Chaudhary** - **Intern at Brainwave Matrix Solutions**
 
-```
-phisher.py          # Main phishing scanner script
-README.md           # Project documentation
-```
+## 🙏 **Acknowledgements** 🙏
 
-## 📜 License
+* This application uses the **Tkinter** library for creating the graphical user interface.
+* The **`re` (regular expression)** library is used for pattern matching to check for character variety (uppercase, lowercase, numbers, special characters) in the password.
+* The list of common passwords (`common_passwords.txt`) is compiled from various sources, including:
+    * Lists of passwords from well-known data breaches (e.g., RockYou)
+    * Common password lists published by security research organizations.
+    * Frequently used password patterns.
+    It is intended to help users avoid using credentials that are highly susceptible to cracking.
 
-This project is for educational purposes and internal research. Not intended for commercial use without permission.
+---
+
+Thank you for checking out my project! 😊
