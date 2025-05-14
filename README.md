@@ -5,7 +5,7 @@ A lightweight Python-based tool to detect potentially malicious or phishing URLs
 
 ## 🚀 About the Project
 
-This project was developed by **Prasiddha Pal**, Intern at **Brainwave Matrix Solutions**, to explore cybersecurity techniques in detecting phishing attacks. The tool helps users evaluate suspicious URLs based on various criteria including domain patterns, suspicious keywords, HTTPS usage, and URL length.
+This project was developed by **Mukesh Chaudhary**, Intern at **Brainwave Matrix Solutions**, to explore cybersecurity techniques in detecting phishing attacks. The tool helps users evaluate suspicious URLs based on various criteria including domain patterns, suspicious keywords, HTTPS usage, and URL length.
 
 ## 🧠 Features
 
@@ -46,7 +46,7 @@ https: False
 malicious_domain: True
 is_phishing: True
 Thank you so much for trying out our service!
-Created by @Prasiddha Pal
+Created by @Mukesh Chaudhary
 ```
 
 ## 📁 File Structure
