@@ -38,7 +38,7 @@ To use the VirusTotal API:
 ## 📝 Example Output
 
 ```
-Enter the URL to scan: http://fake-login.org/account/verify
+Enter the URL to scan: https://www.niti.gov.in/internship
 Scan Results:
 long_url: True
 suspicious_keywords: True
